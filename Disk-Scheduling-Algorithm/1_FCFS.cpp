@@ -5,7 +5,6 @@ using namespace std;
 void FCFS(int arr[], int size, int head)
 {
 	int seek_count = 0;
-	int distance, cur_track;
 
 	for (int i = 0; i < size; i++)
 	{
