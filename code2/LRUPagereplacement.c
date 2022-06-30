@@ -67,7 +67,7 @@ for(j = 0; j < no_of_frames; ++j){
      printf("%d\t", frames[j]);
      }
 }
-printf("\n\nTotal Page Faults = %d", faults);
-    
+    printf("\n\nTotal Page Faults = %d", faults);
+    printf("\n");
     return 0;
 }
