@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <pthread.h>
 
-void *functionC();
+int *functionC();
 pthread_mutex_t mutex1 = PTHREAD_MUTEX_INITIALIZER;
 int  counter = 0;
 
