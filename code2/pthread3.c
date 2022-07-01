@@ -2,8 +2,8 @@
 #include<stdio.h>
 #include<semaphore.h>
 #include<unistd.h> 
-void *fun1();
- void *fun2();
+int *fun1();
+ int *fun2();
  int shared=1; //shared variable
  sem_t s; //semaphore variable
  int main()
