@@ -17,7 +17,7 @@ void *fun1();
  printf("Final value of shared is %d\n",shared); //prints the last updated value of shared variable
  return 0;
  }
-void *fun1()
+int *fun1()
 {
     int x;
     sem_wait(&s); //executes wait operation on s
@@ -29,8 +29,9 @@ void *fun1()
     shared=x; //thread one updates the value of shared variable
     printf("Value of shared variable updated by Thread1 is: %d\n",shared);    
     sem_post(&s);
+    return 0;
 }
-void *fun2()
+int *fun2()
 {
     int y;
     sem_wait(&s);
@@ -42,4 +43,5 @@ void *fun2()
     shared=y; //thread2 updates the value of shared variable
     printf("Value of shared variable updated by Thread2 is: %d\n",shared);
     sem_post(&s);
+    return 0;
 }
