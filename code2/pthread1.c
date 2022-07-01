@@ -31,7 +31,7 @@ int main()
    exit(0);
 }
 
-void *functionC()
+int *functionC()
 {
    pthread_mutex_lock( &mutex1 );
    printf("Locked\n");
@@ -39,4 +39,5 @@ void *functionC()
    printf("Counter value: %d\n",counter);
    pthread_mutex_unlock( &mutex1 );
    printf("UnLocked\n");
+   return 0;
 }
